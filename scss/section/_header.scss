@@ -1,0 +1,22 @@
+// если будут небольшие внутринне отступы у хедера такие как padding, то нужно рассчитать всю ширину. т.е обшая ширина хедера content+padding(если он есть) должна ровняться 1108px на 1440px и более
+
+.header {
+    max-width: 1148px;
+    margin: 0 auto;
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+
+        &__logo{
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 29px;
+        }
+
+        .navigation {
+
+            &__list {
+                display: flex;
+            }
+        }
+}
