@@ -1,0 +1,152 @@
+.section__skill {
+    background: #FFFAF2;
+    padding: 24px 29px 24px 34px;
+}
+.section{
+    &__title {
+        padding-bottom: 20px;
+        text-align: center;
+        font-size: 24px;
+        line-height: 29px;
+        color: #333333;
+    }
+    &__content {
+        &-img{
+            height: 218px;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 26px;
+        }
+        .section__list{
+            align-items: center;
+            flex-direction: column;
+            display: flex;
+            
+           
+            &-item{
+                display: flex;
+                align-items: center;
+                width: 309px;
+                
+                &:nth-child(even) {
+                    margin-bottom: 8px;
+                }
+                &:nth-child(odd) {
+                    margin-bottom: 18px;
+                }
+                &:first-child {
+                    margin-bottom: 30px;
+                }
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+                .skill {
+                    width: 82px;
+                    margin-right: 16px;
+                    font-size: 12px;
+                    line-height: 25px;
+                    font-weight: 600;
+                    
+                }
+                .level {
+                    display: flex;
+                    align-items: center;
+                    width: 211px;
+                    height: 18px;
+                    background: #F5D6AB;
+                    &::before {
+                        content: "";
+                        display: block;
+                        width: 50%;
+                        height: 100%;
+                        background: #C66C49;
+                }
+                
+                }
+                
+                .description {
+                    &__tools {
+                        font-weight: normal;
+                        font-size: 12px;
+                        line-height: 25px
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+    
+    .section{
+        &__content {
+            display: flex;
+            &-img{
+                display: flex;
+                justify-content: center;
+                margin: 0 20px 0 0;
+                height: 265px;
+                width: 265px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .section{
+        display: block;
+        
+        &__title{
+            padding-bottom: 86px;
+            width: 1108px;
+            margin: 0 auto;
+            text-align: left;
+            
+        }
+        &__content {
+            width: 1108px;
+            margin: 0 auto; 
+            &-img{
+                margin: 0 120px 0 0;
+                width: 350px;
+                height: 340px;
+            }
+            .section__list {
+                &-item {
+                    width: 634px;
+                    .skill {
+                        width: 123px;
+                        font-size: 18px;
+                        line-height: 25px;
+                        margin-right: 66px;
+                    }
+                    .description{
+                        &__tools{
+                            font-weight: normal;
+                            font-size: 18px;
+                            line-height: 25px;
+                        }
+                    }
+                    .level {
+                        width: 446px;
+                        height: 24px;
+                    }
+                    &:nth-child(even) {
+                        margin-bottom: 21px;
+                    }
+                    &:nth-child(odd) {
+                        margin-bottom: 21px;
+                    }
+                    &:first-child {
+                        margin-bottom: 65px;
+                    }
+                    &:last-child {
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+        }
+    }
+    
+}

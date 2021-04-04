@@ -1,21 +1,40 @@
-@import './fonts.scss';
-@import './section/header';
+@import "./fonts.scss";
+@import "./section/header";
+@import "./section/banner";
+@import "./section/section-about";
+@import "./section/section-skill";
+@import "./section/section-portfolio";
 
 body {
   font-family: "Libre Franklin", sans-serif;
-    margin: 0px;
-    
-    
-  }
-  
-  p, h1, h2, h3 {
-    margin: 0; }
-  
-  * {
-    box-sizing: border-box; }
+  margin: 0px;
+}
 
-    ul {
-      list-style-type: none;
-      margin: 0px;
-      padding: 0px;
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.section {
+  display: flex;
+  
+  &__text {
+    .text {
+      font-weight: normal;
+      color: #333333;
     }
+  }
+
+}
