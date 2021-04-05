@@ -31,6 +31,7 @@
         .list {
             display: flex;
             flex-wrap: wrap;
+            margin: 0 auto;
             &__item{
                 flex: 1 auto;
                 // flex-grow: inherit;
@@ -55,6 +56,87 @@
                     height: 100%;
                     object-fit: cover;
                     //object-fit: cover; нужно при сжатии или расжирении каритинки внутри контейнера, что бы не шакалилось
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .portfolio {
+        &__content {
+            &-description{
+                width: 368px;
+                .description__text{
+                    font-size: 14px;
+                    line-height: 16px;
+                } 
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 1280px) {
+    .portfolio {
+        padding: 92px 29px 144px 34px;
+        &__title{
+            width: 1108px;
+            margin: 0 auto;
+            justify-content: left;
+            font-size: 24px;
+            line-height: 29px;
+            margin-bottom: 86px;
+        }
+        &__content {
+            display: flex;
+            width: 1108px;
+            margin: 0 auto;
+            justify-content: space-between;
+            &-description{
+                margin: 0;
+                .skill {
+                    margin: 0 0 48px 0;
+                    font-size: 18px;
+                    line-height: 25px;
+                }
+                .description__text{
+                    width: 349px;
+                    font-size: 18px;
+                    line-height: 30px;
+                    text-align: justify;
+                    margin-bottom: 234px;
+                }
+                .portfolio__content-img{
+                    padding-left: 24px;
+                    display: block;
+                    .img{
+                        &:nth-child(1){
+                            margin-right: 14px;
+                        }
+                    }
+                }
+            }
+            .list {
+                padding-top: 42px;
+                margin: 0;
+                &__item{
+                    // flex-grow: inherit;
+                    &:nth-child(1){
+                        
+                    }
+                    &:nth-child(2){
+                       
+                    }
+                    &:nth-child(3){
+                        
+                    }
+                    &:nth-child(4){
+                        
+                    }
+                    &-img{
+                        //object-fit: cover; нужно при сжатии или расжирении каритинки внутри контейнера, что бы не шакалилось
+                    }
                 }
             }
         }

@@ -78,14 +78,16 @@
 }
 
 @media screen and (min-width: 768px) {
-    
+    .section__skill{
+        padding: 92px 29px 144px 34px;
+    }
     .section{
         &__content {
             display: flex;
             &-img{
                 display: flex;
                 justify-content: center;
-                margin: 0 20px 0 0;
+                margin: 0 134px 0 0;
                 height: 265px;
                 width: 265px;
             }
@@ -102,6 +104,8 @@
             width: 1108px;
             margin: 0 auto;
             text-align: left;
+            font-size: 24px;
+            line-height: 29px
             
         }
         &__content {
