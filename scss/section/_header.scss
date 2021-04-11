@@ -13,6 +13,12 @@
     position: absolute;
     left: 34px;
     top: 6px;
+    border: none;
+    background: transparent;
+    .menu {
+      background: transparent;
+      border: none;
+    }
   }
 
   &__logo {
@@ -24,6 +30,31 @@
 
   .navigation {
     display: none;
+    // display: block;
+    width: 100%;
+    background-color: #E5E5E5;
+    &__list {
+      text-align: center;
+      &-item {
+        &:not(:last-child){
+          margin-bottom: 12px;
+
+        }
+        .link {
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 22px;
+          text-decoration: none;
+          cursor: pointer;
+          color: black;
+          background-color: #E5E5E5;
+          // padding: 10px 0 10px 0;
+        }
+      }
+    }
+    &.active {
+      display: block;
+    }
   }
 }
 
@@ -54,6 +85,8 @@
 
     .navigation {
       display: flex;
+      background-color: transparent;
+      width: unset;
       &__list {
         display: flex;
 
@@ -69,6 +102,7 @@
             text-decoration: none;
             cursor: pointer;
             color: #ffffff;
+            background-color: transparent;
           }
         }
       }

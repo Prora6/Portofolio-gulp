@@ -29,6 +29,14 @@
                 width: 309px;
                 
                 &:nth-child(even) {
+                    .level{
+                        &::before {
+                            content: "";
+                            display: block;
+                            height: 100%;
+                            background: #C66C49;
+                        }
+                    }
                     margin-bottom: 8px;
                 }
                 &:nth-child(odd) {
@@ -40,36 +48,25 @@
                 &:last-child {
                     margin-bottom: 0px;
                 }
+
                 &:nth-child(2){
                     .level {
                         &::before {
-                            content: "";
-                            display: block;
                             width: 85%;
-                            height: 100%;
-                            background: #C66C49;
                         }
                     }
                 }
                 &:nth-child(4){
                     .level {
                         &::before {
-                            content: "";
-                            display: block;
                             width: 72%;
-                            height: 100%;
-                            background: #C66C49;
                         }
                     }
                 }
                 &:nth-child(6){
                     .level {
                         &::before {
-                            content: "";
-                            display: block;
                             width: 57%;
-                            height: 100%;
-                            background: #C66C49;
                         }
                     }
                 }
@@ -87,13 +84,6 @@
                     width: 211px;
                     height: 18px;
                     background: #F5D6AB;
-                    // &::before {
-                    //     content: "";
-                    //     display: block;
-                    //     width: 50%;
-                    //     height: 100%;
-                    //     background: #C66C49;
-                    // }
                 }
                 
                 .description {
