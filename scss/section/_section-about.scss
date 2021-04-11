@@ -1,6 +1,9 @@
+.section__about {
+  padding: 24px 29px 8px 34px;
+}
+
 .section {
   flex-direction: column;
-  padding: 24px 29px 8px 34px;
 
   &__title {
     padding-bottom: 20px;
